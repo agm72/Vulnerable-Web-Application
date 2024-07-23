@@ -12,7 +12,7 @@ pipeline {
                 script {
                 def scannerHome = tool 'SonarQube';
                     withSonarQubeEnv('SonarQube') {
-                    sh "/var/jenkins_home/tools/hudson.plugins.sonar.SonarRunnerInstallation/SonarQube/bin/sonar-scanner -Dsonar.projectKey=OWASP -Dsonar.sources=. -Dsonar.host.url=http://192.168.10.200:9000 -Dsonar.token=sqp_c31a3bbee3d4e9cf9bea4d08de8ce3b57143f5a9"
+                    sh "/var/jenkins_home/tools/hudson.plugins.sonar.SonarRunnerInstallation/SonarQube/bin/sonar-scanner -Dsonar.projectKey=OWASP -Dsonar.sources=. -Dsonar.host.url=http://192.168.10.200:9000 -Dsonar.token=sqp_b633e4dc1886bd5146d61537038c0906e53ccc13"
                     }
                 }
             }
